@@ -162,5 +162,3 @@ O front-end será uma Single Page Application (SPA) simples para interagir com o
 *   **Desempenho:** Evitar loops desnecessários e implementar paginação na listagem de entregas.
 
 ---
-
-Esta documentação serve como um ponto de partida. Ajustes podem ser necessários conforme o desenvolvimento avança.

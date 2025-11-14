@@ -1,4 +1,4 @@
-# Documentação Técnica Inicial - Sistema de Rastreamento de Entregas
+# Documentação Técnica Inicial - Lumina Track
 
 ## 1. Visão Geral do Projeto
 

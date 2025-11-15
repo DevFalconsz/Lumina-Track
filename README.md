@@ -161,4 +161,32 @@ O front-end será uma Single Page Application (SPA) simples para interagir com o
 *   **Integrações:** O consumo das APIs de geocodificação deve ser tratado corretamente.
 *   **Desempenho:** Evitar loops desnecessários e implementar paginação na listagem de entregas.
 
----
+## 8. Testes Obrigatórios
+
+Para garantir a qualidade e a robustez do sistema, os seguintes testes devem ser implementados e executados.
+
+### 8.1. Testes Unitários (Back-end)
+
+*   **Parsing de XML:** Testar a função de parsing com diferentes arquivos XML (válidos, inválidos, com campos faltando).
+*   **Validação de Dados:** Testar as funções de validação (ex: formato da chave da NF-e, CEP).
+*   **Geocodificação:** Simular (mock) as respostas das APIs de ViaCEP e Nominatim para testar o fluxo de obtenção de coordenadas.
+*   **Conexão com Banco:** Testar se a conexão com o banco de dados é estabelecida corretamente.
+
+### 8.2. Testes de Integração (API)
+
+*   **Endpoint `/upload`:**
+    *   Testar o upload de um XML válido e verificar se os dados são salvos corretamente nas tabelas `entregas` e `eventos`.
+    *   Testar o upload de um XML com uma `nfe_key` duplicada e verificar se o sistema retorna o erro esperado.
+    *   Testar o upload de um arquivo que não é XML.
+*   **Endpoint `/webhook`:**
+    *   Enviar um payload JSON válido e verificar se o evento é registrado corretamente.
+    *   Enviar um payload para uma `nfe_key` inexistente.
+*   **Endpoints de Consulta (`/entregas`, `/rastreamento/{nfe_key}`):**
+    *   Testar se os dados retornados estão no formato correto e correspondem ao que está no banco de dados.
+
+### 8.3. Testes de Front-end (JavaScript)
+
+*   **Interação do Usuário:**
+    *   Simular o envio do formulário de upload e verificar se a UI reage corretamente (ex: exibe mensagem de sucesso/erro).
+    *   Testar a função de busca e verificar se a timeline e o mapa são atualizados com os dados da API.
+*   **Manipulação do DOM:** Garantir que os elementos da página (mapa, timeline, KPIs) são criados e atualizados conforme as respostas da API.

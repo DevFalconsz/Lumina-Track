@@ -13,7 +13,7 @@ O objetivo deste projeto é desenvolver um mini sistema de rastreamento de entre
 
 ## 3. Arquitetura e Estrutura de Diretórios
 
-A estrutura de diretórios sugerida para organizar o projeto é a seguinte:
+A estrutura de diretórios para organizar o projeto é a seguinte:
 
 ```
 /

@@ -154,8 +154,8 @@ Armazena o histórico de status de cada entrega.
 
 ### Executando com Docker
 
-*(Esta seção será preenchida com as instruções para um deploy simplificado via Docker.)*
+Vide documentação em: [Deploy (Instruções para rodar imagem Docker))](https://github.com/DevFalconsz/Lumina-Track/blob/main/DEPLOYMENT.md).
 
 ---
 
-*Documentação gerada em 20/11/2025.*
+*Documentação feita em 20/11/2025.*

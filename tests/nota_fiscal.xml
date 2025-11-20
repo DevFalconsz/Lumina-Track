@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfe>
+  <infNFe>
+    <ide>
+      <nNF>12345</nNF>
+      <dhEmi>2025-11-15T12:00:00-03:00</dhEmi>
+    </ide>
+    <dest>
+      <CNPJ>00000000000191</CNPJ>
+      <xNome>João da Silva</xNome>
+      <enderDest>
+        <xLgr>Rua Exemplo</xLgr>
+        <nro>100</nro>
+        <xBairro>Centro</xBairro>
+        <cMun>3550308</cMun>
+        <xMun>São Paulo</xMun>
+        <UF>SP</UF>
+        <CEP>01001000</CEP>
+      </enderDest>
+    </dest>
+  </infNFe>
+</nfe>
+

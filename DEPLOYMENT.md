@@ -116,7 +116,7 @@ Para gerenciar o ciclo de vida do container e da imagem:
 
 Todo o ambiente XAMPP e os arquivos do projeto rodam dentro do diretório `/opt/lampp` no container, incluindo:
 
--   `/opt/lampp/htdocs`: Contém os arquivos do seu projeto Lumina Track.
+-   `/opt/lampp/htdocs`: Contém os arquivos do projeto Lumina Track.
 -   `/opt/lampp/etc`: Arquivos de configuração do Apache, PHP e MySQL.
 -   `/opt/lampp/var/mysql`: Onde os dados do banco de dados MariaDB do XAMPP são armazenados.
 -   `/opt/lampp/phpmyadmin`: A instalação do phpMyAdmin para gerenciamento do banco de dados.

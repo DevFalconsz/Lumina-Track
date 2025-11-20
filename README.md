@@ -94,6 +94,34 @@ O roteamento é centralizado no arquivo `backend/routes.php`.
 
 O schema do banco de dados está definido em `backend/db.sql`. As tabelas principais são `entregas` e `eventos`, relacionadas por `entrega_id`.
 
+### Tabela `entregas`
+Armazena as informações extraídas do XML da NF-e.
+
+| Coluna           | Tipo          | Descrição                               |
+| ---------------- | ------------- | --------------------------------------- |
+| `id`             | `INT` (PK, AI)| ID único da entrega.                    |
+| `nfe_key`        | `VARCHAR(44)` | Chave única da NF-e.                    |
+| `dest_name`      | `VARCHAR(255)`| Nome do destinatário.                   |
+| `dest_cep`       | `VARCHAR(9)`  | CEP do destinatário.                    |
+| `dest_logradouro`| `VARCHAR(255)`| Logradouro do destinatário.             |
+| `dest_numero`    | `VARCHAR(255)`| Número do endereço.                     |
+| `dest_bairro`    | `VARCHAR(255)`| Bairro do destinatário.                 |
+| `dest_municipio` | `VARCHAR(255)`| Município do destinatário.              |
+| `dest_uf`        | `VARCHAR(2)`  | UF do destinatário.                     |
+| `dest_lat`       | `DECIMAL(10,8)`| Latitude (pode ser `NULL`).             |
+| `dest_lng`       | `DECIMAL(11,8)`| Longitude (pode ser `NULL`).            |
+| `created_at`     | `TIMESTAMP`   | Data de registro.                       |
+
+### Tabela `eventos`
+Armazena o histórico de status de cada entrega.
+
+| Coluna       | Tipo          | Descrição                               |
+| ------------ | ------------- | --------------------------------------- |
+| `id`         | `INT` (PK, AI)| ID único do evento.                     |
+| `entrega_id` | `INT` (FK)    | Chave estrangeira para `entregas.id`.   |
+| `status`     | `VARCHAR(255)`| Descrição do evento (ex: "Em trânsito").|
+| `event_date` | `TIMESTAMP`   | Data e hora do evento.                  |
+
 ## 5. Guia de Instalação e Execução
 
 ### Pré-requisitos

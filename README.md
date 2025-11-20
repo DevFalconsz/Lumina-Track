@@ -156,6 +156,10 @@ Armazena o histórico de status de cada entrega.
 
 Vide documentação em: [Deploy (Instruções para rodar imagem Docker)](https://github.com/DevFalconsz/Lumina-Track/blob/main/DEPLOYMENT.md).
 
+## 6. Manual do Usuário
+
+Vide documentação em: [Manual do Usuário (Instruções de Uso)](https://github.com/DevFalconsz/Lumina-Track/blob/main/images/USER_MANUAL.md).
+
 ---
 
 *Documentação feita em 20/11/2025.*

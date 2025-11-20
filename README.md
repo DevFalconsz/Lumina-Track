@@ -130,5 +130,5 @@ O schema do banco de dados está definido em `backend/db.sql`. As tabelas princi
 
 Para mais detalhes sobre o uso e o deploy, consulte os seguintes documentos:
 
--   **[📖 Manual do Usuário](USER_MANUAL.md)**: Um guia passo a passo sobre como usar a interface do sistema.
+-   **[📖 Manual do Usuário](https://github.com/DevFalconsz/Lumina-Track/blob/main/images/USER_MANUAL.md)**: Um guia passo a passo sobre como usar a interface do sistema.
 -   **[📦 Guia de Deploy com Docker](DEPLOYMENT.md)**: Instruções detalhadas para executar o projeto em um ambiente Docker containerizado.
